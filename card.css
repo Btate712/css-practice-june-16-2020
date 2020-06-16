@@ -4,13 +4,38 @@
   grid-template-rows: repeat(12, 1fr);
 }
 
-.card {
-  display: inline; 
+#card { 
   box-shadow: 5px 5px darkgray;
   grid-column: 4 / 9;
-  grid-row: 5 / 11;
+  grid-row: 4 / 10;
   border: 1px solid;
   min-height: 300px;
   min-width: 500px;
   max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+#card-front {
+  display: block;
+  /* backface-visibility: hidden; */
+}
+
+#card-back {
+  display: none;
+  transform: rotateY(180deg);
+  /* backface-visibility: visible; */
+}
+
+#flip-button {
+  grid-row-start: 10;
+  grid-column-start: 6;
+  padding: 10px;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
