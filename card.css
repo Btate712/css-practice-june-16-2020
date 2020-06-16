@@ -32,13 +32,3 @@
   display: none;
   transform: rotateY(180deg);
 }
-
-#flip-button {
-  grid-row-start: 10;
-  grid-column-start: 6;
-  padding: 10px;
-  width: 50px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
