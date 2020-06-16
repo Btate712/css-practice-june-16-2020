@@ -19,7 +19,7 @@
   background-color: rgb(232, 245, 249);
   
   transform-style: preserve-3d;
-  transition: 1s;
+  transition: transform 1s;
   
   box-shadow: 10px 10px darkgray;
 }

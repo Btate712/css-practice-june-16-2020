@@ -1,17 +1,18 @@
 let frontShowing = true;
 
 function flip() {
-  const card = document.getElementById("card");
-  const front = document.getElementById("card-front");
-  const back = document.getElementById("card-back");
+  const card = document.getElementById("card").style;
+  const front = document.getElementById("card-front").style;
+  const back = document.getElementById("card-back").style;
 
   frontShowing = !frontShowing;
   
   setTimeout(() => {
-    front.style.display = frontShowing ? "block" : "none";
-    back.style.display = frontShowing ? "none" : "block";
+    front.display = frontShowing ? "block" : "none";
+    back.display = frontShowing ? "none" : "block";
+    card.backgroundColor = frontShowing ? "rgb(232, 245, 249)" : "lightYellow";
   }, 250);
   
-  card.style.boxShadow = frontShowing ? "10px 10px darkGray" : "-10px 10px darkGray";
-  card.style.transform = frontShowing ? "rotateY(0deg)" : "rotateY(180deg)";
+  card.boxShadow = frontShowing ? "10px 10px darkGray" : "-10px 10px darkGray";
+  card.transform = frontShowing ? "rotateY(0deg)" : "rotateY(180deg)";
 }
