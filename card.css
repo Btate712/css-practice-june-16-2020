@@ -19,6 +19,7 @@
   transform-style: preserve-3d;
   font-size: 2em;
   border-radius: 25px;
+  background-color: rgb(232, 245, 249);
 }
 
 #card-front {
