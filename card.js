@@ -12,5 +12,6 @@ function flip() {
     back.style.display = frontShowing ? "none" : "block";
   }, 250);
   
+  card.style.boxShadow = frontShowing ? "5px 5px darkGray" : "-5px 5px darkGray";
   card.style.transform = frontShowing ? "rotateY(0deg)" : "rotateY(180deg)";
 }
