@@ -5,7 +5,6 @@
 }
 
 #card { 
-  box-shadow: 10px 10px darkgray;
   grid-column: 4 / 9;
   grid-row: 4 / 10;
   border: 1px solid;
@@ -15,22 +14,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
-  transform-style: preserve-3d;
   font-size: 2em;
   border-radius: 25px;
   background-color: rgb(232, 245, 249);
+  
+  transform-style: preserve-3d;
+  transition: 1s;
+  
+  box-shadow: 10px 10px darkgray;
 }
 
 #card-front {
   display: block;
-  /* backface-visibility: hidden; */
 }
 
 #card-back {
   display: none;
   transform: rotateY(180deg);
-  /* backface-visibility: visible; */
 }
 
 #flip-button {
