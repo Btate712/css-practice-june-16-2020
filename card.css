@@ -17,11 +17,11 @@
   font-size: 2em;
   border-radius: 25px;
   background-color: rgb(232, 245, 249);
-  
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  
   box-shadow: 10px 10px darkgray;
+}
+
+.flip-card {
+  transition: transform 1s;
 }
 
 #card-front {

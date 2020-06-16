@@ -16,3 +16,9 @@ function flip() {
   card.boxShadow = frontShowing ? "10px 10px darkGray" : "-10px 10px darkGray";
   card.transform = frontShowing ? "rotateY(0deg)" : "rotateY(180deg)";
 }
+
+document.addEventListener('keypress', e => {
+  if(e.code === "Space") {
+    flip();
+  }
+});
